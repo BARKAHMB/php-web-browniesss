@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pembelian Bolu Brownies</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            overflow-y: auto;
+            max-height: 90vh;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-container input, 
+        .form-container textarea, 
+        .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-container input:focus, 
+        .form-container textarea:focus, 
+        .form-container select:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .form-container .back-btn {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .form-container .back-btn:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Isi Form Pembelian</h2>
+        <form action="process_purchase.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="nama_barang">Nama Barang:</label>
+            <input type="text" id="nama_barang" name="nama_barang" readonly value="Bolu Brownies">
+
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" name="jumlah" required>
+
+            <label for="harga">Total Harga:</label>
+            <input type="text" id="harga" name="harga" readonly>
+
+            <label for="tanggal_pembelian">Tanggal Pembelian:</label>
+            <input type="date" id="tanggal_pembelian" name="tanggal_pembelian" required>
+
+            <label for="alamat">Alamat Pengiriman:</label>
+            <textarea id="alamat" name="alamat" rows="3" required></textarea>
+
+            <label for="nomor_telepon">Nomor Telepon:</label>
+            <input type="number" id="nomor_telepon" name="nomor_telepon" required>
+
+            <label for="metode_pembayaran">Metode Pembayaran:</label>
+            <select id="metode_pembayaran" name="metode_pembayaran" required>
+                <option value="transfer_bank">Transfer Bank</option>
+                <option value="shopee-pay">ShopeePay</option>
+                <option value="dana">Dana</option>
+                <option value="qris">Qris</option>
+                <option value="gopay">GoPay</option>
+                <option value="ovo">OVO</option>
+                <option value="Llinkaja">LinkAja</option>
+                <option value="cod">Bayar di Tempat (COD)</option>
+            </select>
+
+            <input type="submit" value="Beli" class="checkout-btn">
+        </form>
+        <a href="garis1.html" class="back-btn">Kembali ke Halaman Utama</a>
+    </div>
+</body>
+</html>

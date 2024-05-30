@@ -1,0 +1,47 @@
+/* sidebar.css */
+
+/* Style untuk sidebar */
+.sidebar {
+    height: 100%;
+    width: 300px; /* Lebar sidebar */
+    position: fixed;
+    top: 0;
+    left: 0; /* Mengatur posisi sidebar agar tetap terlihat */
+    background-color: #333;
+    padding-top: 60px; /* Padding atas untuk menghindari tumpang tindih dengan label tombol */
+    z-index: 1; /* Jaga agar sidebar berada di atas konten */
+    transition: width 0.3s ease; /* Menambahkan transisi agar perubahan lebar terlihat halus */
+}
+
+/* Style untuk daftar menu */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style untuk konten utama */
+.content {
+    margin-left: 300px; /* Sesuaikan margin kiri untuk memberi ruang pada sidebar */
+    padding: 20px;
+}
+
+/* Style untuk mengatur lebar gambar */
+.content img {
+    max-width: calc(100% - 40px); /* Lebar maksimum gambar */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px; /* Tambahkan border-radius untuk gambar */
+}

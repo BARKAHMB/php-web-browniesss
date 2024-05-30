@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Sukses Abadi</title>
+    <!-- Tambahkan fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Tambahkan stylesheet untuk bagian atas -->
+    <link rel="stylesheet" href="atas.css">
+    <!-- Masukkan CSS untuk sidebar -->
+    <link rel="stylesheet" href="sidebar.css">
+    <style>
+        .content {
+            display: flex;
+            align-items: center;
+            flex-direction: column; /* Ubah orientasi flex menjadi kolom */
+            text-align: center; /* Pusatkan teks */
+        }
+
+        .content .text {
+            margin-top: 20px; /* Tambahkan jarak antara gambar dan teks */
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .price {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="sidebar">
+            <div class="top">
+                Menu
+            </div>  
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="garis1.html"><i class="fa fa-shopping-basket"></i> Orders</a></li>
+                <li><a href="history.php"><i class="fa fa-shopping-bag"></i> History</a></li>
+                <li><a href="garis2.php"><i class="fa fa-comment" aria-hidden="true"></i>Opinion</a></li>
+                <li><a href="About.php"><i class="fa fa-address-card" aria-hidden="true"></i> About</a></li>
+                <li><a href="home.php"><i class="fa fa-user-circle"></i> Profile</a></li>
+
+             </ul>
+        </div>
+        <div class="content">
+            <h2>Brownies</h2>
+            <img src="brownies/brownies.jpg" alt="Brownies">
+            <div class="text">
+                <p>Brownies adalah kue cokelat yang sangat populer. Biasanya dibuat dengan campuran tepung, gula, telur, mentega, dan cokelat. Brownies memiliki tekstur yang padat dan rasa yang kaya. Mereka sering dihiasi dengan kacang, cokelat chips, atau sirup karamel. Brownies bisa dimakan begitu saja atau sebagai tambahan untuk es krim atau saus.</p>
+                <p class="price">Harga: Rp. 30.000 per loyang</p>
+            </div>
+        </div>
+    </main>
+    <!-- Sertakan script untuk toggle sidebar -->
+    <script src="sidebar.js"></script>
+</body>
+</html>

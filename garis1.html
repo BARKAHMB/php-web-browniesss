@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjualan Bolu Brownies</title>
+    <!-- Tambahkan fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Tambahkan stylesheet untuk bagian atas -->
+    <link rel="stylesheet" href="bagian pb.css">
+    <!-- Masukkan CSS untuk sidebar -->
+    <link rel="stylesheet" href="sidebar.css">
+    <style>
+        .brownies-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .brownie {
+            flex: 1 1 calc(33.333% - 40px);
+            max-width: calc(33.333% - 40px);
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .brownie img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .brownie h3 {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .brownie .price {
+            font-size: 16px;
+            color: #ff6600;
+            margin: 10px 0;
+        }
+
+        .buy-btn {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .buy-btn:hover {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="top">
+            Menu
+        </div>
+        <ul>
+            <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="garis1.html"><i class="fa fa-shopping-basket"></i> Orders</a></li>
+            <li><a href="history.php"><i class="fa fa-shopping-bag"></i> History</a></li>
+            <li><a href="garis2.php"><i class="fa fa-comment" aria-hidden="true"></i>Opinion</a></li>
+            <li><a href="About.php"><i class="fa fa-address-card" aria-hidden="true"></i> About</a></li>
+            <li><a href="home.php"><i class="fa fa-user-circle"></i> Profile</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>Penjualan Bolu Brownies</h2>
+        <div class="brownies-container">
+            <!-- Brownies di atas -->
+            <div class="brownie" data-nama="Brownies Lumer" data-harga="30000">
+                <img src="brownies/brownies1.jpg" alt="Brownies 1">
+                <h3>Brownies Lumer</h3>
+                <p class="price">Harga: Rp. 30.000</p>
+                <p><br><br>
+                <button class="buy-btn">Beli</button>
+            </div>
+            <div class="brownie" data-nama="Brownies Cokelat Klasik" data-harga="30000">
+                <img src="brownies/brownies2.jpg" alt="Brownies 2">
+                <h3>Brownies Cokelat Klasik</h3>
+                <p class="price">Harga: Rp. 30.000</p>
+                <p><br><br>
+                <button class="buy-btn">Beli</button>
+            </div>
+            <div class="brownie" data-nama="Brownies Kacang Mede" data-harga="30000">
+                <img src="brownies/brownies3.jpg" alt="Brownies 3">
+                <h3>Brownies Kacang Mede</h3>
+                <p class="price">Harga: Rp. 30.000</p>
+                <p><br><br>
+                <button class="buy-btn">Beli</button>
+            </div>
+            <!-- Brownies di tengah -->
+            <div class="brownie" data-nama="Brownies Panggang" data-harga="30000">
+                <img src="brownies/brownies4.jpg" alt="Brownies 4">
+                <h3>Brownies Panggang</h3>
+                <p class="price">Harga: Rp. 30.000</p>
+                <p><br><br>
+                <button class="buy-btn">Beli</button>
+            </div>
+            <div class="brownie" data-nama="Brownies Keju" data-harga="30000">
+                <img src="brownies/brownies5.jpg" alt="Brownies 5">
+                <h3>Brownies Keju</h3>
+                <p class="price">Harga: Rp. 30.000</p>
+                <p><br><br>
+                <button class="buy-btn">Beli</button>
+            </div>
+            <div class="brownie" data-nama="Brownies Chocolate Keju" data-harga="30000">
+                <img src="brownies/brownies6.jpg" alt="Brownies 6">
+                <h3>Brownies Chocolate Keju</h3>
+                <p class="price">Harga: Rp. 30.000</p>
+                <p><br><br>
+                <button class="buy-btn">Beli</button>
+            </div>
+            <!-- Brownies di bawah -->
+            <div class="brownie" data-nama="Brownies Almond" data-harga="30000">
+                <img src="brownies/brownies7.jpg" alt="Brownies 7">
+                <h3>Brownies Almond</h3>
+                <p class="price">Harga: Rp. 30.000</p>
+                <p><br><br>
+                <button class="buy-btn">Beli</button>
+            </div>
+            <div class="brownie" data-nama="Brownies Double Chocolate" data-harga="30000">
+                <img src="brownies/brownies8.jpg" alt="Brownies 8">
+                <h3>Brownies Double Chocolate</h3>
+                <p class="price">Harga: Rp. 30.000</p>
+                <p><br><br>
+                <button class="buy-btn">Beli</button>
+            </div>
+            <div class="brownie" data-nama="Brownies Oreo" data-harga="30000">
+                <img src="brownies/brownies9.jpg" alt="Brownies 9">
+                <h3>Brownies Oreo</h3>
+                <p class="price">Harga: Rp. 30.000</p>
+                <p><br><br>
+                <button class="buy-btn">Beli</button>
+            </div>
+        </div>
+    </div>
+    <script>
+    function openForm(nama, harga) {
+        var formWindow = window.open('form pembelian.html');
+        formWindow.onload = function() {
+            formWindow.document.getElementById('nama_barang').value = nama;
+            formWindow.document.getElementById('harga').value = 'Rp. ' + parseInt(harga).toLocaleString('id-ID');
+        };
+    }
+
+    var brownies = document.querySelectorAll('.brownie');
+    brownies.forEach(function(brownie) {
+        brownie.querySelector('.buy-btn').addEventListener('click', function() {
+            var nama = brownie.getAttribute('data-nama');
+            var harga = brownie.getAttribute('data-harga');
+            openForm(nama, harga);
+        });
+    });
+    </script>
+</body>
+</html>
